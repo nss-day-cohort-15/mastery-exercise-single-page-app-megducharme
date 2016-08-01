@@ -1,6 +1,0 @@
-function activateEventHandlers () {
-
-}
-
-
-document.getElementById("")

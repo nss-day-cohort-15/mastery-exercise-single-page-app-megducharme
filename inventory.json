@@ -16,7 +16,7 @@
       "model": "Corolla",
       "year": 2004,
       "price": 8999,
-      "color": "FloralWhite",
+      "color": "Green",
       "purchased": false,
       "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
     },
@@ -26,7 +26,7 @@
       "model": "Sienna",
       "year": 2001,
       "price": 10999,
-      "color": "Gainsboro",
+      "color": "Blue",
       "purchased": true,
       "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
     }
