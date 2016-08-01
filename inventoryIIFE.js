@@ -1,3 +1,5 @@
+console.log("JS scripts are good")
+
 var CarLot = (function (loadInventory) {
   var currentInventory = [];
 
