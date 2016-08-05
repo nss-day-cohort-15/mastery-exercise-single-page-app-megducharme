@@ -1,15 +1,31 @@
-// console.log("styling script tag is included")
+console.log("styling script tag is included")
 
-// var Carlot = (function (styleTheSelectedCar) {
+var CarLot = (function (styleTheSelectedCar) {
 
-//   CarLot.clickCarEvent = function (event) {
-//     console.log(event)
-//     var selectedCar = event.target
-//     console.log(event.target) // target.childNode
-//     selectedCar.style.backgroudColor = "lightblue";
-//     selectedCar.style.border = "5px";
-//   }
 
-//   return styleTheSelectedCar
+  styleTheSelectedCar.addSelectedCarClass = function (currentCarCard) {
+    console.log("addSelectedCarClass is running")
+    currentCarCard.classList.add("selectedCar");
+  }
 
-// }) (Carlot || {})
+  styleTheSelectedCar.removeSelectedCarClass = function () {
+    console.log("removeSelectedCarClass is running")
+    var allMyCarCards = document.querySelectorAll(".carCard");
+      console.log(allMyCarCards)
+    for (var i = allMyCarCards.length - 1; i >= 0; i--){
+    allMyCarCards[i].classList.remove("selectedCar")
+    }
+
+  styleTheSelectedCar.bindDescriptionToInputBox = function () {
+    var inputField = document.getElementById("inputField")
+    var currentCar = evt
+      inputField.focus();
+      inputField.addEventListener("keypress-input", function (evt) {
+    console.log(evt);
+    inputField.value = evt.target.value
+      })
+  }
+
+  return styleTheSelectedCar
+
+} (CarLot || {})

@@ -29,7 +29,7 @@ var CarLot = (function () {
         </div>`
       })
 
-      // CarLot.activateEvents()
+      CarLot.activateEvents()
   }
 }
 

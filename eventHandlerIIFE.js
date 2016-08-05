@@ -9,38 +9,18 @@ var CarLot = (function (carLot) {
     var allMyCarCards = document.querySelectorAll(".carCard");
       console.log(allMyCarCards)
     for (var i = allMyCarCards.length - 1; i >= 0; i--) {
-      allMyCarCards[i].addEventListener("click", function (evt) {
-      var carContainer = document.querySelector(".container")
-      console.log(evt)
-      evt.currentTarget.classList.add("selectedCar");
-    // }
-      })// End of for loop
+      allMyCarCards[i].addEventListener("click", addStylingToSelectedCar)
+
+    function addStylingToSelectedCar (evt) {
+      CarLot.removeSelectedCarClass()
+      CarLot.addSelectedCarClass(evt.currentTarget)
+      CarLot.bindDescriptionToInputBox(evt.currentTarget)
+    }
+    }
   }
-
-///reset selected car
-  carLot.resetCars = function () {
-    var allMyCarCards = document.querySelectorAll(".selectedCar");
-    console.log(allMyCarCards)
-    for (var i = allMyCarCards.length - 1; i >= 0; i--) {
-      allMyCarCards[i].addEventListener("click", function (evt) {
-      allMyCarCards.classList.remove("selectedCar");
-    })
-  }
-
-////binding the text in the input field to the text in the description
-    // var inputField = document.getElementById("inputField");
-//     inputField.addEventListener("keypress-input", function (evt) {
-//       console.log(evt);
-//       inputField.innerHTML =
-
-// ////resetting cards to original styling
-
-
-//     })
-
+}
   return carLot
 
-}(CarLot || {})
+})(CarLot || {})
 
-CarLot.resetCars(CarLot.activateEvents)
 
