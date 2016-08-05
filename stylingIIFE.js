@@ -1,30 +1,15 @@
-console.log("JS scripts are good")
+// console.log("styling script tag is included")
 
-var CarLot = (function activateEvents() {
+// var Carlot = (function (styleTheSelectedCar) {
 
-return {
-  bindInputEventHandler: function (event) {
-    console.log("bindInputEventHandler event is running")
-  document.getElementById("inputField").addEventListener("keypress-input",
-    function bindInputEvent (event) {
-      var inputField = document.getElementById("inputField");
-      var currentCarDescription = document.getElementById("currentCarDescription");
-      inputField.innerHTML = currentCarDescription;
-    })
-  },
+//   CarLot.clickCarEvent = function (event) {
+//     console.log(event)
+//     var selectedCar = event.target
+//     console.log(event.target) // target.childNode
+//     selectedCar.style.backgroudColor = "lightblue";
+//     selectedCar.style.border = "5px";
+//   }
 
-  clickCarEvent: function (event) {
-    console.log("clickCarEvent is running")
-    document.getElementById("selectedCar").addEventListener("click",
-      function selectedCarClick (event){
-        var selectedCar = getElementById("selectedCar");
-        selectedCar.style.backgroudColor = "lightblue";
-        selectedCar.style.border = "5px";
-      })
-  }
-}
+//   return styleTheSelectedCar
 
-})(CarLot || {})
-
-
-CarLot.bindInputEventHandler();
+// }) (Carlot || {})

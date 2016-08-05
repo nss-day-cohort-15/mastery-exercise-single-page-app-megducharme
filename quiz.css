@@ -1,15 +1,11 @@
 .carCard {
-  border:2px solid black;
+  border:2px solid;
   margin-top: 20px;
 }
 
 .carImg{
   max-width: 80%;
   padding: auto;
-}
-
-.nav {
-  background-color: firebrick;
 }
 
 h2 {
@@ -27,4 +23,9 @@ h3 {
 
 h1{
   text-align: center;
+}
+
+.selectedCar {
+  border: 5px solid;
+  background-color: lightblue;
 }

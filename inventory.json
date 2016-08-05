@@ -6,7 +6,7 @@
       "model": "Accord",
       "year": 2005,
       "price": 10888,
-      "color": "DimGrey",
+      "color": "dimgrey",
       "purchased": true,
       "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
     },
@@ -16,19 +16,19 @@
       "model": "Corolla",
       "year": 2004,
       "price": 8999,
-      "color": "Green",
+      "color": "green",
       "purchased": false,
       "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
     },
     {
-      "img":"http://www.classycars.org/Toyota/Toyota.2011.Sienna.xle.373.jpg",
-      "make": "Toyota",
-      "model": "Sienna",
+      "img":"http://thegearmotor.com/wp-content/uploads/2015/03/OCAuto-7-2.jpg",
+      "make": "Honda",
+      "model": "Honda Car",
       "year": 2001,
       "price": 10999,
-      "color": "Blue",
+      "color": "aqua",
       "purchased": true,
-      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+      "description": "This is an immaculate Honda with only 25000 miles on it. Leather seats, power everything."
     }
   ]
 }

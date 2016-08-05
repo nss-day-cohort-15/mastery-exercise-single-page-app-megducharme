@@ -1,6 +1,6 @@
-console.log("JS scripts are good")
+console.log("JS script tags are good")
 
-var CarLot = (function (loadInventory) {
+var CarLot = (function () {
   var currentInventory = [];
 
   return {
@@ -18,18 +18,20 @@ var CarLot = (function (loadInventory) {
 
       currentInventory.forEach(function(car) {
         container.innerHTML += `
-        <div id="selectedCar" class="col-sm-4 carCard">
+        <div class="col-sm-4 carCard" style="border-color: ${car.color}">
           <img class="carImg" src="${car.img}">
           <h2>${car.model}</h2>
           <h3>${car.year}</h3>
           <h3>${car.price}</h3>
           <h3>${car.color}</h3>
           <h3>${car.purchased}</h3>
-          <p id="currentCarDescription">${car.description}</p>
+          <p>${car.description}</p>
         </div>`
       })
-    }
+
+      // CarLot.activateEvents()
   }
+}
 
 })(CarLot || {})
 
