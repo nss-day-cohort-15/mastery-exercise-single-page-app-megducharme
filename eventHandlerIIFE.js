@@ -1,7 +1,7 @@
 console.log("JS script tags are good")
 
 var CarLot = (function (carLot) {
-  console.log(CarLot)
+  console.log(carLot)
 
   carLot.activateEvents = function () {
     console.log("activateEvents funtion is running")
@@ -12,13 +12,13 @@ var CarLot = (function (carLot) {
       allMyCarCards[i].addEventListener("click", addStylingToSelectedCar)
 
     function addStylingToSelectedCar (evt) {
+      console.log(evt.currentTarget)
       CarLot.removeSelectedCarClass()
       CarLot.addSelectedCarClass(evt.currentTarget)
-      CarLot.bindDescriptionToInputBox(evt.currentTarget)
-    }
+      CarLot.bindDescriptionToInputBox(evt.currentTarget.lastElementChild)
     }
   }
-}
+    }
   return carLot
 
 })(CarLot || {})
