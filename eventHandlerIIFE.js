@@ -18,7 +18,7 @@ var CarLot = (function (carLot) {
       CarLot.bindDescriptionToInputBox(evt.currentTarget.lastElementChild)
     }
   }
-    }
+}
   return carLot
 
 })(CarLot || {})

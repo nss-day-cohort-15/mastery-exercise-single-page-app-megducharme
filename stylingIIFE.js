@@ -18,13 +18,18 @@ var CarLot = (function (styleTheSelectedCar) {
   }
 
   styleTheSelectedCar.bindDescriptionToInputBox = function (description) {
-    console.log(description)
-    console.log("bindDescriptionToInputBox is running")
+
     var inputField = document.getElementById("inputField")
+    var allMyCarCards = document.querySelectorAll(".carCard")
+
       inputField.focus();
-      inputField.addEventListener("keyup", function (evt) {
-          description.innerHTML += inputField.value
+      inputField.removeEventListener("focus", changeDescription)
+
+      function changeDescription (evt) {
+      inputField.addEventListener("keyup", function (){
+          description.innerHTML = inputField.value
       })
+    }
   }
 
   return styleTheSelectedCar
