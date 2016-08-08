@@ -17,22 +17,22 @@ var CarLot = (function (styleTheSelectedCar) {
     currentCarCard.classList.add("selectedCar");
   }
 
-  styleTheSelectedCar.bindDescriptionToInputBox = function (description) {
+  // styleTheSelectedCar.bindDescriptionToInputBox = function (description) {
 
-    var inputField = document.getElementById("inputField")
-    // var allMyCarCards = document.querySelectorAll(".carCard")
+  //   var inputField = document.getElementById("inputField")
+  //   // var allMyCarCards = document.querySelectorAll(".carCard")
 
-      inputField.focus();
+  //     inputField.focus();
 
 
-      // inputField.removeEventListener("focus", changeDescription)
+  //     // inputField.removeEventListener("focus", changeDescription)
 
-      // function changeDescription (evt) {
-      inputField.addEventListener("keyup", function (){
-          description.innerHTML = inputField.value
-      })
+  //     // function changeDescription (evt) {
+  //     inputField.addEventListener("keyup", function (){
+  //         description.innerHTML = inputField.value
+  //     })
     // }
-  }
+
 
   return styleTheSelectedCar
 

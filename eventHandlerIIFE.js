@@ -13,17 +13,21 @@ var CarLot = (function (carLot) {
       allMyCarCards[i].addEventListener("click", addStylingToSelectedCar)
 
     function addStylingToSelectedCar (evt) {
+      inputField.value = ""
+      inputField.focus()
       currentTargetCar = evt.currentTarget
-      console.log(currentTargetCar)
+      console.dir(currentTargetCar)
       CarLot.removeSelectedCarClass()
       CarLot.addSelectedCarClass(currentTargetCar)
     }
   }
 
       var inputField = document.getElementById("inputField")
-      inputField.addEventListener("keypress", example)
-      function example(event){
+      inputField.addEventListener("keypress", editDescription)
+      function editDescription(evt){
+        var description = currentTargetCar.querySelector("p")
         console.log(currentTargetCar)
+        description.innerHTML = inputField.value
       }
 
 
