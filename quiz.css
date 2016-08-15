@@ -1,0 +1,31 @@
+.carCard {
+  border:2px solid;
+  margin-top: 20px;
+}
+
+.carImg{
+  max-width: 80%;
+  padding: auto;
+}
+
+h2 {
+  font-weight: bold;
+  font-size:
+}
+
+h2, h3, p {
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h1{
+  text-align: center;
+}
+
+.selectedCar {
+  border: 5px solid;
+  background-color: lightblue;
+}
